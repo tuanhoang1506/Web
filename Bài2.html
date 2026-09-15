@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Sinh Viên CNTT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+        body {
+            background-color: #f1f9f6;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Banner Header */
+        header.site-header {
+            background: linear-gradient(135deg, #1377b8, #1ca5a3, #6fc276);
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px 20px;
+        }
+        header.site-header h1 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+        }
+        header.site-header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Navigation menu */
+        nav {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 12px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background-color: #1783b9;
+        }
+
+        /* Container Layout */
+        main {
+            flex: 1;
+            max-width: 1050px;
+            width: 100%;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2.2fr 1fr;
+            gap: 25px;
+            align-items: start;
+        }
+
+        /* Article Card */
+        article {
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2ece8;
+        }
+        article header h2 {
+            font-size: 20px;
+            color: #111;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        article header p.meta {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        article section p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+        article section strong {
+            color: #0b5375;
+        }
+        article section em {
+            color: #2b7a78;
+            font-style: italic;
+            font-weight: 600;
+        }
+        article footer {
+            margin-top: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        /* Aside (Tin liên quan) */
+        aside {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2ece8;
+        }
+        aside h3 {
+            font-size: 16px;
+            color: #222;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #2b7a78;
+        }
+        aside ul {
+            list-style: none;
+        }
+        aside li {
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #eee;
+        }
+        aside li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        aside a {
+            text-decoration: none;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #1f6587;
+            font-weight: 500;
+            display: block;
+        }
+        aside a:hover {
+            color: #0d3e54;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer.site-footer {
+            background: #eef6f3;
+            border-top: 1px solid #dcebe5;
+            padding: 18px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            line-height: 1.6;
+        }
+        address {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <hgroup>
+            <h1>BÁO SINH VIÊN CNTT</h1>
+            <p>Tin tức – Công nghệ – Sáng tạo</p>
+        </hgroup>
+    </header>
+
+    <nav>
+        <a href="#" class="active">Trang chủ</a>
+        <a href="#">Tin công nghệ</a>
+        <a href="#">Sự kiện</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+
+    <main>
+        <article>
+            <header>
+                <h2>Khám Phá Sức Mạnh AI: Hội Thảo "Tương Lai Đổi Mới" Chấn Động Giới Trẻ</h2>
+                <p class="meta">Tác giả: Nguyễn Văn An | Ngày: 15/11/2024</p>
+            </header>
+
+            <section>
+                <p>
+                    <strong>Trí tuệ nhân tạo (AI)</strong> đang chứng kiến tốc độ phát triển vượt bậc, và sự kiện 
+                    <em>"Tương Lai Đổi Mới"</em> đã chính thức mở màn cho chuỗi hội thảo công nghệ thường niên dành cho thế hệ sinh viên nhiệt huyết. Dưới sự dẫn dắt của những chuyên gia hàng đầu ngành công nghệ cao, hội thảo đem lại góc nhìn sắc nét và thực chiến nhất về tương lai của ngành phần mềm.
+                </p>
+                <p>
+                    Kỹ năng ứng dụng <strong>Máy học (Machine Learning)</strong> và xử lý dữ liệu lớn được làm rõ như là hành trang không thể thiếu. Tại <em>"Tương Lai Đổi Mới"</em>, các chuyên gia khẳng định rằng việc hiểu rõ mô hình ngôn ngữ và cách làm chủ các thuật toán xử lý dữ liệu sẽ giúp sinh viên tự tin nắm bắt cơ hội nghề nghiệp trong thị trường lao động số.
+                </p>
+                <p>
+                    Bên cạnh đó, vấn đề <strong>Đạo đức công nghệ và An toàn thông tin</strong> cũng được thảo luận vô cùng sôi nổi. Hội thảo <em>"Tương Lai Đổi Mới"</em> không chỉ truyền cảm hứng công nghệ mà còn khẳng định: người trẻ cần làm chủ tương lai số với một tư duy đổi mới, đạo đức nghề nghiệp vững vàng và tinh thần học hỏi không ngừng.
+                </p>
+            </section>
+
+            <footer>
+                <p>Nguồn: CLB Tin học – ĐH ABC</p>
+            </footer>
+        </article>
+
+        <aside>
+            <h3>Tin liên quan</h3>
+            <ul>
+                <li><a href="#">Hackathon Sinh viên 2024: Tham Gia Ngay!</a></li>
+                <li><a href="#">Workshop Web Design cho Người Mới Bắt Đầu</a></li>
+                <li><a href="#">Meetup Khởi Nghiệp Công Nghệ Trẻ</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <address>
+            Trường Đại học ABC | Số 123 Đường Sáng Tạo, Phường Kỹ Thuật, Quận Công Nghệ, TP. Hồ Chí Minh | SĐT: 028.9876543 | Email: lienhe@abc.edu.vn | Website: www.abc.edu.vn
+        </address>
+    </footer>
+
+</body>
+</html>
