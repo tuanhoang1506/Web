@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điện tử ABC - Samsung Galaxy S24 Ultra</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: #f7fafc;
+            color: #333;
+        }
+
+        /* Top Header Bar */
+        header.shop-header {
+            background-color: #64b5b4;
+            padding: 12px 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #123d40;
+        }
+        header.shop-header img {
+            background: #fff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            object-fit: contain;
+        }
+        header.shop-header h1 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Main Container */
+        main {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2.8fr 1fr;
+            gap: 25px;
+        }
+
+        /* Product Section */
+        .product-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+        .page-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .product-detail-grid {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 25px;
+            align-items: start;
+        }
+        .product-img-box {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            background: #fafafa;
+        }
+        .product-img-box img {
+            width: 100%;
+            height: auto;
+            max-width: 240px;
+            display: block;
+            margin: 0 auto;
+        }
+        .product-info h2 {
+            font-size: 20px;
+            color: #1a202c;
+            margin-bottom: 10px;
+        }
+        .product-desc {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        /* Specs Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 13px;
+            text-align: left;
+            padding: 6px 0;
+            color: #444;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #c9e4e8;
+            text-align: left;
+        }
+        thead th {
+            background-color: #d6eef2;
+            color: #0d4b55;
+        }
+        tbody th {
+            background-color: #f1f9fb;
+            color: #444;
+            font-weight: 600;
+            width: 30%;
+        }
+        tbody td {
+            background-color: #fff;
+            color: #555;
+        }
+
+        /* Similar Products */
+        .similar-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #edf2f7;
+        }
+        .similar-section h2 {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .similar-list {
+            display: flex;
+            gap: 15px;
+            list-style-position: inside;
+        }
+        .similar-list li {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #2b6cb0;
+        }
+
+        /* Aside Policy */
+        aside.policy-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            height: fit-content;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+        aside.policy-box h3 {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #eee;
+        }
+        aside.policy-box ul {
+            padding-left: 18px;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer.shop-footer {
+            background-color: #285d68;
+            color: #e2e8f0;
+            text-align: center;
+            padding: 14px 20px;
+            font-size: 12px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="shop-header">
+        <img src="logo.png" alt="Logo Điện tử ABC" width="200" height="60">
+        <h1>Điện tử ABC</h1>
+    </header>
+
+    <main>
+        <section class="product-card">
+            <h3 class="page-title">Thông tin sản phẩm</h3>
+
+            <div class="product-detail-grid">
+                <div class="product-img-box">
+                    <img src="s24ultra.jpg" alt="Samsung Galaxy S24 Ultra" width="400" height="400">
+                </div>
+
+                <div class="product-info">
+                    <h2>Samsung Galaxy S24 Ultra</h2>
+                    <p class="product-desc">
+                        Samsung Galaxy S24 Ultra là dòng siêu phẩm flagship tích hợp hệ sinh thái Galaxy AI đột phá, khung vỏ Titan bền bỉ, màn hình Dynamic AMOLED 2X 120Hz rực rỡ và cụm camera đỉnh cao sắc nét.
+                    </p>
+
+                    <table>
+                        <caption>Thông số kỹ thuật</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Thông số</th>
+                                <th scope="col">Chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Màn hình</th>
+                                <td>Màn hình 6.8 inch</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Camera</th>
+                                <td>Camera chính 200 MP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pin</th>
+                                <td>5000 mAh</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">RAM</th>
+                                <td>12 GB</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Bộ nhớ</th>
+                                <td>256 GB, 512 GB, 1 TB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Sản phẩm tương tự -->
+            <section class="similar-section">
+                <h2>Sản phẩm tương tự</h2>
+                <ol class="similar-list">
+                    <li>iPhone 15 Pro</li>
+                    <li>Xiaomi 14 Pro</li>
+                    <li>Galaxy Z Fold5</li>
+                </ol>
+            </section>
+        </section>
+
+        <!-- Aside -->
+        <aside class="policy-box">
+            <h3>Chính sách mua hàng</h3>
+            <ul>
+                <li>Bảo hành 12 tháng</li>
+                <li>Đổi trả 7 ngày</li>
+                <li>Miễn phí ship (toàn quốc)</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="shop-footer">
+        <p>Liên hệ: 0912.345.678 | Email: contact@dientuabc.com | Website: www.dientuabc.com</p>
+        <p>&copy; Copyright 2024 Điện tử ABC</p>
+    </footer>
+
+</body>
+</html>
