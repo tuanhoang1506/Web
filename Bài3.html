@@ -19,7 +19,7 @@
         /* Top Header Bar */
         header.shop-header {
             background-color: #64b5b4;
-            padding: 12px 30px;
+            padding: 12px 20px;
             display: flex;
             align-items: center;
             gap: 15px;
@@ -27,13 +27,263 @@
         }
         header.shop-header img {
             background: #fff;
-            padding: 4px 10px;
+            padding: 4px 8px;
             border-radius: 4px;
             object-fit: contain;
         }
         header.shop-header h1 {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
+        }
+
+        /* Main Container */
+        main {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: 2.6fr 1fr;
+            gap: 20px;
+        }
+
+        /* Product Section */
+        .product-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+        .page-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .product-detail-grid {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+        .product-img-box {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            background: #fafafa;
+        }
+        .product-img-box img {
+            width: 100%;
+            height: auto;
+            max-width: 220px;
+            display: block;
+            margin: 0 auto;
+        }
+        .product-info h2 {
+            font-size: 18px;
+            color: #1a202c;
+            margin-bottom: 8px;
+        }
+        .product-desc {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        /* Specs Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 13px;
+            text-align: left;
+            padding: 6px 0;
+            color: #444;
+        }
+        th, td {
+            padding: 8px 10px;
+            border: 1px solid #c9e4e8;
+            text-align: left;
+        }
+        thead th {
+            background-color: #d6eef2;
+            color: #0d4b55;
+        }
+        tbody th {
+            background-color: #f1f9fb;
+            color: #444;
+            font-weight: 600;
+            width: 32%;
+        }
+        tbody td {
+            background-color: #fff;
+            color: #555;
+        }
+
+        /* Similar Products */
+        .similar-section {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #edf2f7;
+        }
+        .similar-section h2 {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 12px;
+        }
+        .similar-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style-position: inside;
+        }
+        .similar-list li {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #2b6cb0;
+        }
+
+        /* Aside Policy */
+        aside.policy-box {
+            background: #fff;
+            padding: 16px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            height: fit-content;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+        aside.policy-box h3 {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #eee;
+        }
+        aside.policy-box ul {
+            padding-left: 18px;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer.shop-footer {
+            background-color: #285d68;
+            color: #e2e8f0;
+            text-align: center;
+            padding: 14px 15px;
+            font-size: 11px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Mobile */
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            .product-detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header shop -->
+    <header class="shop-header">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'><rect width='200' height='60' fill='white'/><text x='100' y='38' font-family='Arial' font-size='22' font-weight='bold' fill='%230d4b55' text-anchor='middle'>ABC STORE</text></svg>" alt="Logo Điện tử ABC" width="200" height="60">
+        <h1>Điện tử ABC</h1>
+    </header>
+
+    <main>
+        <section class="product-card">
+            <h3 class="page-title">Thông tin sản phẩm</h3>
+
+            <div class="product-detail-grid">
+                <div class="product-img-box">
+                    <!-- Ảnh trực tiếp Samsung S24 Ultra & SPen nhúng vector SVG an toàn tuyệt đối -->
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400' width='300' height='400'><rect width='100%25' height='100%25' fill='%23f5f6f8'/><rect x='25' y='60' width='14' height='290' rx='7' fill='%23475569'/><path d='M25 330 L32 355 L39 330 Z' fill='%231e293b'/><rect x='60' y='25' width='200' height='350' rx='16' fill='%23334155' stroke='%2364748b' stroke-width='4'/><rect x='68' y='33' width='184' height='334' rx='10' fill='%230f172a'/><path d='M68 250 Q160 160 252 280 L252 367 L68 367 Z' fill='%2338bdf8' opacity='0.7'/><circle cx='95' cy='65' r='14' fill='%230f172a' stroke='%2394a3b8' stroke-width='3'/><circle cx='95' cy='105' r='14' fill='%230f172a' stroke='%2394a3b8' stroke-width='3'/><circle cx='95' cy='145' r='14' fill='%230f172a' stroke='%2394a3b8' stroke-width='3'/><circle cx='135' cy='85' r='9' fill='%230f172a' stroke='%2394a3b8' stroke-width='2'/><circle cx='135' cy='120' r='5' fill='%23fef08a'/><text x='160' y='220' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'>Galaxy S24 Ultra</text></svg>" alt="Samsung Galaxy S24 Ultra" width="400" height="400">
+                </div>
+
+                <div class="product-info">
+                    <h2>Samsung Galaxy S24 Ultra</h2>
+                    <p class="product-desc">
+                        Samsung Galaxy S24 Ultra là dòng siêu phẩm flagship tích hợp hệ sinh thái Galaxy AI đột phá, khung vỏ Titan bền bỉ, màn hình Dynamic AMOLED 2X 120Hz rực rỡ và cụm camera đỉnh cao sắc nét.
+                    </p>
+
+                    <table>
+                        <caption>Thông số kỹ thuật</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Thông số</th>
+                                <th scope="col">Chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Màn hình</th>
+                                <td>Màn hình 6.8 inch Dynamic AMOLED 2X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Camera</th>
+                                <td>Chính 200 MP, Zoom 50 MP, Siêu rộng 12 MP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pin</th>
+                                <td>5000 mAh, Sạc nhanh 45W</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">RAM</th>
+                                <td>12 GB</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Bộ nhớ</th>
+                                <td>256 GB, 512 GB, 1 TB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Sản phẩm tương tự -->
+            <section class="similar-section">
+                <h2>Sản phẩm tương tự</h2>
+                <ol class="similar-list">
+                    <li>iPhone 15 Pro</li>
+                    <li>Xiaomi 14 Pro</li>
+                    <li>Galaxy Z Fold5</li>
+                </ol>
+            </section>
+        </section>
+
+        <!-- Aside -->
+        <aside class="policy-box">
+            <h3>Chính sách mua hàng</h3>
+            <ul>
+                <li>Bảo hành 12 tháng</li>
+                <li>Đổi trả 7 ngày</li>
+                <li>Miễn phí ship (toàn quốc)</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="shop-footer">
+        <p>Liên hệ: 0912.345.678 | Email: contact@dientuabc.com | Website: www.dientuabc.com</p>
+        <p>&copy; Copyright 2024 Điện tử ABC</p>
+    </footer>
+
+</body>
+</html>
         }
 
         /* Main Container */
